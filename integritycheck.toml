@@ -1,0 +1,41 @@
+[evm]
+
+[evm.goerli]
+
+getbalance=true
+
+# should be a valid ethereum(goerli) address
+getbalanceDefaultaddress="0x0000000000000000000000000000000000000000"
+
+getERC20balance=true
+
+# should be a valid erc20 token(goerli) address
+defaultERC20address="0x07865c6E87B9F70255377e024ace6630C1Eaa37F"
+
+# should be a valid ethereum(goerli) address
+getERC20balanceDefaultaddress="0x75c0c372da875a4fc78e8a37f58618a6d18904e8"
+
+getCode=true
+
+# should be a valid ethereum(goerli) contract address
+getCodeDefaultaddress="0x07865c6E87B9F70255377e024ace6630C1Eaa37F"
+
+getTransactionCount=true
+
+# should be a valid ethereum(goerli) address
+getTransactionCountDefaultaddress="0xf0046E53d11c6E7a6BAdB4C9E849fCC26509dc16"
+
+web3_sha3=true
+
+getTransactionByHash=true
+
+# should be a valid ethereum(goerli) transaction hash
+getTransactionByHashDefaulttransactionhash="0x81ca329f3472c853712b8f7d0d996212aa1bed99b5166eb7ceb5cb4dae38b528"
+
+[cosmossdk]
+
+[cosmossdk.stride]
+
+queryValidators=true
+
+queryBlock=true
