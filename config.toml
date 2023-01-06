@@ -1,0 +1,50 @@
+[check]
+
+# How long to at least check once(second)
+granularity=450
+
+connect_timeout=60
+
+# How many blocks can a node be behind standard rpc
+max_behind_blocks=10
+
+[integritycheck]
+
+# Decide whether to perform integrity check
+enabled=true
+
+# Cosmossdk node should be put under this
+[cosmossdk]
+
+# the chain name is stride, for other chains, please follow the format
+[cosmossdk.stride]
+
+# standard rpc for this chain
+standard_rpc="https://rpc.stride.silentvalidator.com"
+
+#the format is [node_name,rpc_url] ,you can add more nodes
+node=[["cosmos-a","https://rpc.stride.silentvalidator.com"],["cosmos-b","https://stride.nodejumper.io"]]
+
+
+# the chain name is cosmoshub, for other chains, please follow the format
+[cosmossdk.cosmoshub]
+
+# standard rpc for this chain
+standard_rpc="https://rpc-cosmoshub-ia.cosmosia.notional.ventures"
+
+#the format is [node_name,rpc_url] ,you can add more nodes
+node=[["cosmos-a","https://cosmos-rpc.polkachu.com"],["cosmos-b","https://rpc.cosmoshub.strange.love"]]
+
+# Evm node such as ethereum,goerli should be put under this
+[evm]
+
+# the chain name is goerli, for other chains, please follow the format
+[evm.goerli]
+
+# standard rpc for this chain
+standard_rpc="https://eth-goerli.public.blastapi.io"
+
+#the format is [node_name,rpc_url] ,you can add more nodes
+node=[["a","https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"],["b","https://goerli.infura.io/v3/28da0689af874bca9a175c66dcd1e151"]]
+
+
